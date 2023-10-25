@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task.css">
+</head>
+<body>
+    <div class="ch">
+        <h1>Vote Eligibility</h1>
+        <div><label>Enter the Age:</label></div>
+        <BR>
+        <div><input id="n" type="number"></div>
+        <BR>
+        <div><button onclick="alertOn()">SUBMIT</button></div>
+
+
+        <div>
+            <p id="rr"></p>
+        </div>
+
+ <script>
+function alertOn(){
+     const element = document.getElementById('n')
+     age=element.value
+     
+if (age>18)
+
+{
+    alert("Eligible for voting"); 
+    
+}
+else
+{
+    alert("Not Eligible");
+}
+}
+        </script>
+
+<!-- <div class="ch">
+    <h1>Vote Eligibility</h1>
+    <div><label for="">Enter the Age:</label></div>
+    <BR>
+    <div><input id="n" type="number"></div>
+    <BR>
+    <div><button onclick="GetTag('red')">SUBMIT</button></div>
+
+
+<script>
+
+function GetTag(newcolor)
+{
+        const element = document.getElementById('n')
+        element.style.color=newcolor
+if(element>18)
+{
+alert("Eligible for voting");  
+}
+else
+{
+alert("Not Eligible");
+}
+}
+ 
+    </script> -->
+
+    <!-- <div class="ch">
+        <h1>Vote Eligibility</h1>
+        <div><label for="">Enter the Age:</label></div>
+        <BR>
+        <div><input id="n" type="number"></div>
+        <BR>
+        <div><button onclick="GetTag('red')">SUBMIT</button></div>
+    
+    
+    <script>
+    
+    function GetTag(newcolor)
+    {
+            const element = document.getElementById('n')
+            element.style.color=newcolor
+    if (confirm(element>18))
+    {
+    alert("Eligible for voting");  
+    }
+    else
+    {
+    alert("Not Eligible");
+    }
+    } -->
+     
+        </script>
+
+    </div>
+</body>
+</html>

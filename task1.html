@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tas1.css">
+</head>
+<body>
+
+<div class="de">
+    <div>
+        <button onclick="incre()">INCREMENT</button>
+        <button onclick="incre10()">INCREMENT by 10</button>
+    </div>
+    <br>
+    <h1 id="data"></h1>
+    <br>
+    <div>
+        <button onclick="decre()">DECREMENT</button>
+        <button onclick="decre10()">DECREMENT by 10</button>
+    </div>
+   
+</div>
+    <script>
+        
+            let count=0;
+            document.getElementById("data").innerText=count;
+           
+            
+        
+        function incre(){
+        
+           count=count+1;
+           document.getElementById("data").innerText=count;
+        }
+
+        function incre10(){
+            
+           count=count+10;
+           document.getElementById("data").innerText=count; 
+        }
+
+        function decre(){
+            
+           count=count-1;
+           document.getElementById("data").innerText=count;
+        }
+
+        function decre10(){
+            
+           count=count-10;
+           document.getElementById("data").innerText=count;  
+        }
+    </script>
+    
+</body>
+</html>

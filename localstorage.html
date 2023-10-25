@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./local.css">
+</head>
+<body>
+   <form action="" class="store">
+    <h1>Store the Data</h1>
+    <div><label for="car">CAR</label></div>
+    <br>
+    <div><input type="text" id="car"></div> <br>
+    <div><label for="price">PRICE</label></div> <br>
+    <div><input type="text" id="price"></div> <br>
+    <div><label for="key">KEY</label></div> <br>
+    <div><input type="text"  id="key"></div> <br>
+    <div><button onclick="store()" style="color:rgb(181, 247, 225) ; background-color: rgb(41, 76, 64);">STORE</button></div>
+   </form> 
+
+   <form action="" class="he">
+    <h1>Retrieve the Data</h1>
+    <div><label for="">KEY</label></div> <br>
+    <div><input id="record" type="text"></div> <br>
+    <div><button onclick="retrieve()" style="color: rgb(181, 187, 247); background-color: rgb(76, 81, 143);">RETRIEVE</button></div>
+   </form>
+
+   <p id="result "></p>
+
+   <form action="" class="del">
+    <h1>Delete the Data</h1>
+    <div><label for="">KEY</label></div> <br>
+    <div><input type="text" id="deletekey1"></div> <br>
+    <div><button onclick="deletekey()" style="color:rgb(247, 224, 181) ; background-color: rgb(180, 141, 69);">DELETE</button></div>
+   </form>
+
+   <BR></BR>
+   <DIV class="clr">
+    <div><BUtton onclick="clear()" style="color: rgb(247, 181, 199); background-color: rgb(174, 67, 96);">CLEAR ALL</BUtton></div>
+   </DIV>
+</body>
+
+<script>
+
+    function store(){
+        var model = car.value
+        var price = price.value
+        // var key=document.getElementById("key").value;
+        cars={
+            "Modelname" :model,
+            "expense":price
+        }
+        const carn=JSON.stringify(cars)
+         localStorage.setItem(key.value,carn)
+    }
+
+    function retrieve(){
+        vehi = localStorage.getItem(record.value);
+        result.innerHTML=vehi;
+        event.preventDefault()
+    }
+
+    function deletekey(){
+       localStorage.removeItem(deletekey1.value);
+    }
+
+    function clear(){
+        localStorage.clear(clr.value)
+    }
+    
+    
+</script>
+</html>

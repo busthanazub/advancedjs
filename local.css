@@ -1,0 +1,42 @@
+.store{
+    background-color: rgb(181, 247, 225);
+    padding: 4%;
+    margin-left: 5%;
+    margin-right: 73%;
+    text-align: center;
+    color:rgb(41, 76, 64); 
+}
+body{
+    text-align: center;
+  
+}
+
+.he{
+    background-color: rgb(181, 187, 247);
+    padding: 4%;
+    margin-left: 33%;
+    margin-right: 43%;
+    text-align: center;
+    margin-top: -25%;
+    color:  rgb(76, 81, 143);
+}
+
+.del{
+    background-color: rgb(247, 224, 181);
+    padding: 7%;
+    margin-left: 63%;
+    margin-right: 13%;
+    margin-top: -25%;
+    color: rgb(180, 141, 69);
+text-align: center;
+}
+
+.clr{
+    background-color:rgb(247, 181, 199); 
+    padding: 3%;
+}
+
+button{
+    font-size: 150%;
+    font-family: cursive;
+}

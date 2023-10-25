@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./del.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>PRODUCT</th>
+            <th>ACTION</th>
+        </tr>
+        <tr>
+            <td><img src="https://ovenfresh.in/wp-content/uploads/2023/02/Vase-Of-Red-And-White-Roses_1-1-min.jpg" width="330px" height="330px" alt=""></td>
+            <td><button onclick="deleteAction()">DELETE</button></td>
+        </tr>
+        <tr>
+            <td><img src="https://i.pinimg.com/originals/57/f8/c9/57f8c922b0307a2deba7f4f5cd7f373d.png" width="330px" height="330px" alt=""></td>
+            <td><button onclick="deleteAction()">DELETE</button></td>
+        </tr>
+        <tr>
+            <td><img src="https://www.satyamkraft.in/cdn/shop/products/41uO8soa2rS_396x500.jpg?v=1624101011" width="330px" height="330px"  alt="" srcset=""></td>
+            <td><button onclick="deleteAction()">DELETE</button></td>
+        </tr>
+        <tr>
+            <td><img src="https://www.mypoojabox.in/cdn/shop/products/DSC_3109.jpg?v=1631884284" width="330px" height="330px" alt="" srcset=""></td>
+            <td><button onclick="deleteAction()">DELETE</button></td>
+        </tr>
+    </table>
+
+    <script>
+        function deleteAction()
+        {
+            if(confirm("confirm deletion"))
+            {
+                console.log("user deleted");
+            }
+            else{
+                console.log("user canceled");
+            }
+        }
+    </script>
+</body>
+</html>

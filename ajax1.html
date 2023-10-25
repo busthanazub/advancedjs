@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api calling</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+    <center>  
+    <h1><u>POSTS</u></h1>
+    <br>
+<table>
+    <!-- <tr>
+        <td><div>USER ID</div>
+            <div>ID</div>
+            <div>TITLE</div>
+            <div>BODY</div></td>
+        
+    </tr> -->
+<br>
+   
+    
+    
+</thead>
+
+    <tbody id="resultofapicalling"  style="text-align: center; background-color: rgb(240, 212, 209);">
+
+    </tbody>
+
+    
+</table>
+
+</center>
+
+
+
+<script>
+    var request =new XMLHttpRequest()
+    request.open('get','https://jsonplaceholder.typicode.com/posts')
+    request.send()
+    request.onreadystatechange=()=>{
+        if(request.readyState==4)
+        {
+            if(request.status>199 && request.status<300)
+            {
+                console.log(request.responseText);
+                let todos = JSON.parse(request.responseText)
+                console.log(todos);
+                DisplayData(todos)
+            }
+        }
+    }
+
+    
+    function DisplayData(todos){
+        htmlData=''
+        for(let todo of todos)
+        {
+            htmlData= `<tr> <td>
+            <div>${todo.userId}</div>
+    <div>${todo.id}</div>
+    <div>${todo.title}</div>
+    <div>${todo.body}</div> </td> </tr>
+    `
+    resultofapicalling.innerHTML+=htmlData
+        }
+    }
+</script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>

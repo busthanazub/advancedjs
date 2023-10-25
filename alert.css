@@ -1,0 +1,17 @@
+.row{
+    border: 3cm;
+    background-color: rgb(201, 240, 161);
+    text-align: center;
+    padding: 2%;
+    margin: 15%;
+    border-color: rgb(22, 40, 4);
+    border-width: 5cm;
+}
+
+.button{
+    text-align: center;
+    background-color: white;
+    color: chartreuse;
+    padding: 1%;
+    
+}

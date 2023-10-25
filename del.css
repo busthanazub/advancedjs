@@ -1,0 +1,15 @@
+table{
+    padding: 1%;
+    text-align: center;
+    background-color: rgb(248, 223, 177);
+    border: 2cm;
+    margin-left: 32%;
+    column-width: 55cm;
+    
+}
+button{
+    padding: 10%;
+    /* margin: 6%; */
+    margin-left: 32%;
+    background-color: rgb(200, 175, 127);
+}
